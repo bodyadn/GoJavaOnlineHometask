@@ -1,10 +1,13 @@
 package module_3.part_1;
 
+import java.util.ArrayList;
 import java.util.List;
+
+//aggregation
 
 public class Directory {
 
-    private List<File> files;
+    private List<File> files = new ArrayList<>();
     private File file;
 
     public File getFile() {
