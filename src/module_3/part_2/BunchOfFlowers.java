@@ -1,6 +1,6 @@
 package module_3.part_2;
 
-//composition потому что сделать такую диаграмму
+//composition потому что сделал такую диаграмму
 //хотя по смыслу скорей всего это не композиция
 
 public class BunchOfFlowers extends Flower{
