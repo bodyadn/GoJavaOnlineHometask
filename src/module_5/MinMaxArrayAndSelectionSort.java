@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class MinMaxArrayAndSelectionSort {
 
+    public static final int CHANGE_NUMBER = 3;
+
     public static int enterInt(String message) {
         while (true) {
             try {
@@ -46,13 +48,13 @@ public class MinMaxArrayAndSelectionSort {
         // вставка для ДЗ модуля 6_1
 
         try {
-            intArray[3] = 100;
+            intArray[CHANGE_NUMBER] = 100;
             System.out.println("3-th array's element is changed");
-            if (intArray[3] > maxArrayNumber) {
-                maxArrayNumber = intArray[3];
+            if (intArray[CHANGE_NUMBER] > maxArrayNumber) {
+                maxArrayNumber = intArray[CHANGE_NUMBER];
             }
-            if (intArray[3] < minArrayNumber) {
-                minArrayNumber = intArray[3];
+            if (intArray[CHANGE_NUMBER] < minArrayNumber) {
+                minArrayNumber = intArray[CHANGE_NUMBER];
             }
         } catch (ArrayIndexOutOfBoundsException Ex) {
             System.out.println("Нет такого элемента в массиве! Замена не произведена!");

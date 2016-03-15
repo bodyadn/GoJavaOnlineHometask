@@ -2,12 +2,15 @@ package module_4.part_2;
 
 public class TemperatureConverter {
 
+    public static final double COEFFICIENT1 = 32.0;
+    public static final double COEFFICIENT2 = 5.0 / 9.0;
+
     public double convertTempToCelsius (double temperature){
-        return (temperature - 32.0) * (5.0/9.0);
+        return (temperature - COEFFICIENT1) * COEFFICIENT2;
     }
 
     public double convertTempToFahrenheit (double temperature){
-        return temperature * (9.0/5.0) + 32.0;
+        return temperature * (1/COEFFICIENT2) + COEFFICIENT1;
     }
 
     public static void main(String [] args) {
