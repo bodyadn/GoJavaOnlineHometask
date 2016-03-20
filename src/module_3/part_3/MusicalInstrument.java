@@ -1,13 +1,14 @@
 package module_3.part_3;
 
 public class MusicalInstrument {
-    private String kind;
 
-    public String getKind() {
-        return kind;
+    private String group;
+
+    public String getGroup() {
+        return group;
     }
 
-    public void setKind(String kind) {
-        this.kind = kind;
+    public void setGroup(String group) {
+        this.group = group;
     }
 }

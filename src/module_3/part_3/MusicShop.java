@@ -6,26 +6,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MusicShop {
-    private List<MusicalInstrument> instruments = new ArrayList<>();
-    private MusicalInstrument musicalInstrument;
 
-    public List<MusicalInstrument> getInstruments() {
-        return instruments;
+    private List<Guitar> guitars = new ArrayList<>();
+    private List<Piano> pianos = new ArrayList<>();
+    private List<Trumpet> trumpets = new ArrayList<>();
+
+    public List<Guitar> getGuitars() {
+        return guitars;
     }
 
-    public void setInstruments(List<MusicalInstrument> instruments) {
-        this.instruments = instruments;
+    public List<Piano> getPianos() {
+        return pianos;
     }
 
-    public MusicalInstrument getMusicalInstrument() {
-        return musicalInstrument;
-    }
-
-    public void setMusicalInstrument(MusicalInstrument musicalInstrument) {
-        this.musicalInstrument = musicalInstrument;
-    }
-
-    void addInstruments (MusicalInstrument musicalInstrument) {
-        instruments.add(musicalInstrument);
+    public List<Trumpet> getTrumpets() {
+        return trumpets;
     }
 }
