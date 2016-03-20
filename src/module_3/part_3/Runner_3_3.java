@@ -25,9 +25,9 @@ public class Runner_3_3 {
 
         //формируем заказ для отгрузки
         Map<String, Integer> order = new HashMap<>();
-        order.put("piano", 2);
+        order.put("piano", 1);
         order.put("guitar", 2);
-        order.put("trumpet", 2);
+        order.put("trumpet", 3);
 
         Set<String> keysOrderSet = order.keySet();
 
@@ -49,7 +49,7 @@ public class Runner_3_3 {
             }
 
             // уменьшаем остатки магазина согласно поступившего заказа (почему не работает если заказ изменить на 3?)
-            for (int i = 0; i < order.get(key); i++) {
+            for (int i = order.get(key)-1; i >= 0 ; i--) {
                 switch (key) {
                     case "piano":
                         musicShop.getPianos().remove(i);
