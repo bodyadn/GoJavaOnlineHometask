@@ -48,7 +48,7 @@ public class Runner_3_3 {
                 throw new IllegalStateException();
             }
 
-            // уменьшаем остатки магазина согласно поступившего заказа (почему не работает если заказ изменить на 3?)
+            // уменьшаем остатки магазина согласно поступившего заказа
             for (int i = order.get(key)-1; i >= 0 ; i--) {
                 switch (key) {
                     case "piano":
